@@ -1,0 +1,13 @@
+# Original Binance Qty: 100/200
+symbol: XMRUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [2, 5, 10, 20, 63]
+    value: 0.01
+
+  outer:
+    qty: [2, 5, 10, 20, 63]
+    value: 0.02
+    min: 0.015

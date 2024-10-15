@@ -1,0 +1,49 @@
+# Project name that will be "measurement' name in InfluxDb
+project: thorchain_websocket_v2
+
+# Used Bot (path to python file from project root)
+bot: bot/dex_arbitrage/arbitrage_bot_thorchain.py
+
+series: thorchain_dev
+
+threshold: 10000
+withdraw_limit_btc: 2
+withdraw_window: 36
+
+coin: BUSD
+capital: 1500
+scattering: 0.0
+
+track_capital:
+  - 1000
+  - 2500
+  - 5000
+  - 10000
+  - 25000
+  - 50000
+
+pancake:
+  node: https://bsc-dataseed.binance.org/
+  address: "0xf5DBF73A2D6c36d0cB7439149B049Ed5b2333505"
+  private_key:
+
+bakery:
+  node: https://bsc-dataseed.binance.org/
+  address: "0xf5DBF73A2D6c36d0cB7439149B049Ed5b2333505"
+  private_key:
+
+binance:
+  key: XKUCQ7mG8KgeziQaxNegtnKZNKoDKMf44g6VcI6R6DDzTI8P9oRdqMGsQp9P5y0I
+  secret:
+  address: bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23
+  memo:
+
+interval: 5
+
+subscription: { BINANCE.SPOT: [AVABUSD, BNBBUSD, ETHBUSD, TWTBUSD, RUNEBUSD] }
+
+bepswap:
+  pool: https://chaosnet-midgard.bepswap.com
+
+thorswap:
+  pool: http://thornode.thorchain.info

@@ -1,0 +1,17 @@
+services:
+
+  simple-bot:
+    build: .
+    command:
+      [
+        "-a",
+        "yaml/bot/simple_bot.yaml",
+        "-a",
+        "secrets.yaml"
+      ]
+
+    deploy:
+      restart_policy:
+        condition: any
+        delay: 5s
+        window: 120s

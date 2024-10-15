@@ -1,0 +1,14 @@
+# Original Binance Qty: 100/200
+symbol: AVAXUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [3, 12, 25, 30, 40]   # 100
+    value: 0.01
+
+  outer:
+    qty: [6, 24, 50, 60, 120]  # 200 
+    value: 0.02
+    min: 0.015
+

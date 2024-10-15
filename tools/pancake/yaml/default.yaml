@@ -1,0 +1,27 @@
+series: pancake_dev
+
+dex_exchange: pancake
+
+# quotes:
+#  USDT: [1000, 5000, 10000]
+#  USDC: [1000, 5000, 10000]
+#  BUSD: [1000, 5000, 10000]
+#  BNB: [.5, 1, 2, 10, 20]
+
+pancake:
+  node: https://bsc-dataseed.binance.org/
+  address: "0xf5DBF73A2D6c36d0cB7439149B049Ed5b2333505"
+  private_key:
+
+bakery:
+  node: https://bsc-dataseed.binance.org/
+  address: "0xf5DBF73A2D6c36d0cB7439149B049Ed5b2333505"
+  private_key:
+
+binance:
+  key: XKUCQ7mG8KgeziQaxNegtnKZNKoDKMf44g6VcI6R6DDzTI8P9oRdqMGsQp9P5y0I
+  secret:
+  address: bnb136ns6lfw4zs5hg4n85vdthaad7hq5m4gtkgf23
+  memo:
+
+interval: 2

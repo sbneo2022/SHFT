@@ -1,0 +1,16 @@
+# Original Binance Qty: 4/8
+symbol: BTCUSDT.LONG
+exchange: OKEX.PERP
+
+# For BTC we are reduce Stoploss Distance
+stoploss_coeff: 4
+
+spread:
+  inner:
+    qty: [0.01, 0.01, 0.01, 0.01, 0.01]
+    value: 0.0025
+
+  outer:
+    qty: [0.01, 0.01, 0.01, 0.01, 0.01]
+    value: 0.005
+    min: 0.0035

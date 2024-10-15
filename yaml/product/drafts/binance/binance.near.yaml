@@ -1,0 +1,14 @@
+# Original Binance Qty: 30000/6000
+symbol: NEARUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [25, 50, 100, 200, 625]  # 1000
+    value: 0.01
+
+  outer:
+    qty: [75, 150, 300, 600, 1875]  # 2000
+    value: 0.02
+    min: 0.015
+

@@ -1,0 +1,12 @@
+symbol: TRXUSDT.LONG
+exchange: OKEX.PERP
+
+spread:
+  inner:
+    qty: 1000
+    value: 0.01
+
+  outer:
+    qty: 1000
+    value: 0.02
+    min: 0.015

@@ -1,0 +1,13 @@
+# Original Binance Qty: 300/600
+symbol: UNIUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [5, 15, 40, 90, 150]  # 300
+    value: 0.01
+
+  outer:
+    qty: [5, 15, 40, 90, 150]  # + 300 = 600
+    value: 0.02
+    min: 0.015

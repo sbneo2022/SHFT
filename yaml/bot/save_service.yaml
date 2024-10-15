@@ -1,0 +1,5 @@
+# Project name that will be "measurement' name in InfluxDb
+project: live
+
+# Used Bot (path to python file from project root)
+bot: bot/no_bot/no_bot.py

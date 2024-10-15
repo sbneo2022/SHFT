@@ -1,0 +1,16 @@
+# Original Binance Qty: 500/1000
+symbol: DOTUSDT.SHORT
+exchange: OKEX.PERP
+
+# handle_inventory: no
+
+spread:
+  inner:
+    qty: [5, 5, 10, 20, 40]  # 15
+    value: 0.02
+    min: 0.005
+
+  outer:
+    qty: [60, 90, 135, 200, 300]  # + 15 = 30
+    value: 0.03
+    min: 0.025

@@ -1,0 +1,14 @@
+# Original Binance Qty: 15/30
+symbol: KSMUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [1, 2, 4, 8, 16]   # 15
+    value: 0.01
+
+  outer:
+    qty: [2, 4, 8, 16, 32]  # 30
+    value: 0.02
+    min: 0.015
+

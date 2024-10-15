@@ -1,0 +1,15 @@
+series: pp
+
+perpetual_protocol:
+  http: https://divine-cool-hill.xdai.quiknode.pro/018ad1c5da8fd9bda7f9d555951e12b71b03bc87/
+
+ftx:
+  key:
+  secret:
+
+influx:
+  host: 10.0.0.1
+  port: 8086
+  username: admin
+  password: 123456
+  database: logs

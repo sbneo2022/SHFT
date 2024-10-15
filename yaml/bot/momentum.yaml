@@ -1,0 +1,49 @@
+# Project name that will be "measurement' name in InfluxDb
+project: momentum_bot_prod
+
+# Used Bot (path to python file from project root)
+bot: bot/clp/clp_momentum.py
+
+# How many ATR away should be Stoploss Price
+stoploss_coeff: 8
+
+# Fixed Trailing profit after Break Event
+trailing_profit: 0.0025
+
+# Fixed Trailing profit after Stoploss Break Event
+stoploss_trailing_profit: 0.0025
+
+# How much QTY we trade from level SUM
+qty_coeff: 0.2
+
+# Min holding time
+hold: 2.1
+
+# Condition Parameters (seconds for time)
+high_abs_spread_pause: 6   # Pause when spread value greater than max_abs_spread
+high_ratio_spread_pause: 3  # Pause when Spread/AvgSpread - 1 > max_ratio_spread
+high_latency_pause: 6  # Pause when Data Latency > max_latency
+high_allocation_pause: 6  # Pause when Allocation > max_allocation_coeff * (sum of all QTY from config)
+high_api_pause: 60  # Pause when we are close to API limits
+high_losses_pause: 0.1  # Pause when we hit all Stoploss Levels
+
+max_allocation_coeff: 1
+max_abs_spread: 0.004
+max_latency: 0.5  # max websocket data latency in seconds. Pause when exceed
+max_ratio_spread: 2
+max_spread_count: 300
+
+# Spread parameters
+spread:
+  inner:
+    qty:  # Empty --> should be override
+    value:   # Empty --> should be override with Inner Spread
+    gap: 0.001
+    hysteresis: 0.1  # We replace levels if distance decrease more than 10%
+    force: 0.8   # We can replace levels _before_ holding time if ask/bid too close (more than 80%)
+
+  outer:
+    qty:  # Empty --> should be override
+    value:   # Empty --> should be override with Outer Spread
+    min:  # Empty --> should be override with Min Outer Spread value
+    hysteresis: 0.25

@@ -1,0 +1,13 @@
+# Original Binance Qty: 10/20
+symbol: AAVEUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [0.3, 0.7, 1, 2, 6]  # 10
+    value: 0.01
+
+  outer:
+    qty: [0.3, 0.7, 1, 2, 6]  # + 10 = 20
+    value: 0.02
+    min: 0.015

@@ -1,0 +1,16 @@
+.stButton>button {
+    width: 100%;
+}
+
+.reportview-container .dataframe  {
+    font-family: Avant Garde, sans-serif;
+    font-size: 0.8rem;
+}
+
+.stHeader {
+    font-family: Avant Garde, sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: center;
+}

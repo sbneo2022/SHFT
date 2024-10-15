@@ -1,0 +1,35 @@
+# Project name that will be "measurement' name in InfluxDb
+project: imomentum_bot
+
+# Used Bot (path to python file from project root)
+bot: bot/iea/imomentum.py
+
+##########################################################################################
+
+symbol: FILUSDT.LONG
+exchange: OKEX.PERP
+
+##########################################################################################
+
+schema:
+  low: {threshold: 2, value: 0.25}
+  high: {threshold: 4, value: 1}
+
+max_inventory: 1
+
+side: -1
+
+direction: -1
+
+warming_up: 10
+
+deque: 50
+
+##########################################################################################
+
+fee: 0.0002
+stoploss_coeff: 3
+trailing_profit: 0.0010
+stoploss_trailing_profit: 0.0010
+first_liquidation : 0.5
+second_liquidation : 0.5

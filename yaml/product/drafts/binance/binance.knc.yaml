@@ -1,0 +1,15 @@
+# Original Binance Qty: 3000/6000
+symbol: KNCUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [25, 100, 400, 1200, 1275]  # 3000
+    value: 0.01
+
+  outer:
+    qty: [75, 300, 1200, 3600, 3825]  # 6000
+    value: 0.02
+    min: 0.015
+
+

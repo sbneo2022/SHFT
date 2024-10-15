@@ -1,0 +1,47 @@
+# Project name that will be "measurement' name in InfluxDb
+project: iea_hedge_bot
+
+# Used Bot (path to python file from project root)
+bot: bot/iea/iea_hedge.py
+
+##########################################################################################
+max_qty: 0.0
+
+symbol: FILUSDT.LONG
+exchange: OKEX.PERP
+
+hedge:
+  symbol: FILUSDT.SHORT
+  exchange: OKEX.PERP
+
+delta:
+  symbol: FILUSDT
+  exchange: BINANCE.FUTURES
+
+
+subscription:
+  - {symbol: FILUSDT, exchange: BINANCE.FUTURES}
+  - {symbol: FILUSDT.LONG, exchange: OKEX.PERP}
+  - {symbol: FILUSDT.SHORT, exchange: OKEX.PERP}
+
+##########################################################################################
+
+threshold:
+  long: 15
+  short: 5
+
+side: 0
+
+formula: bid
+
+hold: 2
+
+max_pct: 0.1   # Maximum market impact of TOP5 orderbook: 0.1 -> 10% of sum top5 qty
+
+spread:
+  inner:
+#    pct: [0.05, 0.1, 0.2, 0.3, -]  # 3000
+#    max_qty: 0.1
+    qty: 0.1
+    value: 0.002
+    gap: 0.0005

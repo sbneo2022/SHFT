@@ -1,0 +1,24 @@
+project: default
+
+bot: bot/no_bot/no_bot.py
+
+rabbit:
+  host: 10.0.0.1
+
+hazelcast:
+  host: 10.0.0.1
+
+influx:
+  host: 25.128.18.122
+  port: 8086
+  username: bot
+  password: d3j-m2c-8py
+  database: logs
+
+BINANCE.FUTURES:
+  rest_url: https://fapi.binance.com
+  wss_url: wss://fstream.binance.com
+
+fee: 0.0004  # Default Fee (one direction) for Break Event price calculations
+
+distance: 0.005  # Default Stoploss distance for legacy algos: 0.5%

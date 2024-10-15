@@ -1,0 +1,13 @@
+# Original Binance Qty: 500/1000
+symbol: TOMOUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [10, 20, 40, 80, 350]  # 500
+    value: 0.01
+
+  outer:
+    qty: [10, 20, 40, 80, 350]  # 500
+    value: 0.02
+    min: 0.015

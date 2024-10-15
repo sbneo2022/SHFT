@@ -1,0 +1,23 @@
+method: arbitrage
+
+threshold: 10000
+withdraw_limit_btc: 2
+withdraw_window: 36
+
+coin: BUSD
+capital: 1500
+scattering: 0.0
+
+track_capital:
+  - 1000
+  - 2500
+  - 5000
+  - 10000
+  - 25000
+  - 50000
+
+bepswap:
+  pool: https://chaosnet-midgard.bepswap.com
+
+thorswap:
+  pool: http://thornode.thorchain.info

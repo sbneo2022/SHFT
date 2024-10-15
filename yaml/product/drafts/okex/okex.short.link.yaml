@@ -1,0 +1,16 @@
+# Original Binance Qty: 2000/4000
+symbol: LINKUSDT.SHORT
+exchange: OKEX.PERP
+
+# handle_inventory: no
+
+spread:
+  inner:
+    qty: [5, 10, 20, 40, 125]  # 2000
+    value: 0.02
+    min: 0.005
+
+  outer:
+    qty: [5, 10, 20, 40, 125]  # +2000 =4000
+    value: 0.03
+    min: 0.025

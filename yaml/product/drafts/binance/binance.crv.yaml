@@ -1,0 +1,15 @@
+# Original Binance Qty: 30000/6000
+symbol: CRVUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [25, 75, 225, 675, 1000]  # 2000
+    value: 0.01
+
+  outer:
+    qty: [75, 225, 675, 2025, 3000]  # 4000
+    value: 0.02
+    min: 0.015
+
+

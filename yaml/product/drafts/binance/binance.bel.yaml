@@ -1,0 +1,14 @@
+# Original Binance Qty: 400/800
+symbol: BELUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [5, 20, 40, 100, 235]   # 400
+    value: 0.01
+
+  outer:
+    qty: [10, 40, 80, 200, 235]  # + 400 = 800
+    value: 0.02
+    min: 0.015
+

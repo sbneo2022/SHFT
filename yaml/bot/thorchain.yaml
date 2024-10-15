@@ -1,0 +1,16 @@
+project: thorchain
+
+# Used Bot (path to python file from project root)
+bot: bot/iea/thorchain.py
+
+symbol: BNBBUSD
+exchange: BINANCE.DEX
+
+rune_bnb_rate:
+  symbol: RUNEBNB
+  exchange: BINANCE.DEX
+
+thorchain:
+  api: https://chaosnet-midgard.bepswap.com
+  address: bnb123qkzlr0c4s60qs7rlprpz4apd6l2fdyhhaalt
+  private_key: 504980ce915cefadb9a301a5a25aeecc7fa445aa9bd4b78e7dce0b799f8acbbf

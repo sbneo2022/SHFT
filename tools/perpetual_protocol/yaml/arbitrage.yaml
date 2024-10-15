@@ -1,0 +1,40 @@
+products:
+  - AAVE
+  - BTC
+  - COMP
+  - CRV
+  - DOT
+  - ETH
+  - LINK
+  - MKR
+  - SNX
+  - SUSHI
+  - UNI
+  - YFI
+
+pairs:
+  - [binance, perpetual_protocol]
+  - [ftx, perpetual_protocol]
+  - [dydx, perpetual_protocol]
+  - pair: [binance, ftx]
+    high_threshold: 0.0020
+    low_threshold: 0.0005
+  - pair: [binance, dydx]
+    high_threshold: 0.0020
+    low_threshold: 0.0005
+  - pair: [dydx, ftx]
+    high_threshold: 0.0020
+    low_threshold: 0.0005
+
+
+capital: 10000
+
+high_threshold: 0.0040  # 40 basis points
+
+low_threshold: 0.0001  # 1 basis points
+
+slippage: 0.0002
+
+fee: 0.0004
+
+direction: -1

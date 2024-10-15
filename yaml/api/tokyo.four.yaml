@@ -1,0 +1,8 @@
+influx:
+  host: 54.248.124.33
+
+BINANCE.FUTURES:
+  key:
+  secret:
+  rest_url: https://fapi3.binance.com
+  wss_url: wss://fstream.binance.com

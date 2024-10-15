@@ -1,0 +1,13 @@
+# Original Binance Qty: 100000/200000
+symbol: SUSHIUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [30, 60, 120, 320, 1200]  # 1500
+    value: 0.01
+
+  outer:
+    qty: [45, 90, 180, 480, 1800]  # 3000
+    value: 0.02
+    min: 0.015

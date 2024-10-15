@@ -1,0 +1,13 @@
+# Original Binance Qty: 1000/2000
+symbol: GRTUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [20, 40, 200, 400, 1340 ]  # x2 => 2000
+    value: 0.01
+
+  outer:
+    qty: [30, 60, 300, 600, 2010]  # x3 => + 3000 = 5000
+    value: 0.02
+    min: 0.015

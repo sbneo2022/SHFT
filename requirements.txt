@@ -1,0 +1,21 @@
+apscheduler==3.6.3
+ccxt==1.54.29
+ciso8601==2.1.3
+botocore==1.22.6
+deepmerge==0.1.1
+hazelcast-python-client==4.0
+influxdb==5.2.3
+loguru==0.5.3
+notifiers==1.2.1
+pandas==1.1.5
+pika==1.2.0
+psutil==5.8.0
+PyYAML==5.3.1
+# python_binance_chain==0.1.20
+requests==2.25.0
+s3fs==2021.11.1
+seaborn==0.11.2
+streamlit==1.2.0
+watchdog==2.1.6
+web3==5.21.0
+websocket_client==0.57.0

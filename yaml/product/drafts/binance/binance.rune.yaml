@@ -1,0 +1,13 @@
+# Original Binance Qty: 30000/6000
+symbol: RUNEUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [50, 50, 200, 500, 2200]  # 3000
+    value: 0.01
+
+  outer:
+    qty: [50, 50, 200, 500, 2200]  # 3000
+    value: 0.02
+    min: 0.015

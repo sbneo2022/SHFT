@@ -1,0 +1,34 @@
+# Project name that will be "measurement' name in InfluxDb
+project: fr_bot_dev
+
+# Used Bot (path to python file from project root)
+bot: bot/iea/funding_rate.py
+
+##########################################################################################
+
+symbol: TRXUSDT
+exchange: BINANCE.FUTURES
+
+hedge:
+  symbol: TRXUSDT
+  exchange: BINANCE.SPOT
+
+##########################################################################################
+
+limit.tick: 1
+limit.impact: 0.05
+limit.pause: 1
+limit.hold: 10
+
+market.impact: 0.05
+market.pause: 5
+
+##########################################################################################
+
+warming_up: 10 # N seconds after system init when we r trying to send order
+
+usd: 15 # USD based allocation. Has higher priority than "max_inventory"
+
+#max_inventory: 100 # qty to hedge
+
+threshold: 0.000105  # Funding Rate threshold when we liquidate inventory

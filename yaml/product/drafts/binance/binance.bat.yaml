@@ -1,0 +1,13 @@
+# Original Binance Qty: 50000/100000
+symbol: BATUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [250, 500, 4000, 8000, 37250]  # 50_000
+    value: 0.01
+
+  outer:
+    qty: [250, 500, 4000, 8000, 37250]  # + 50_000 = 100_000
+    value: 0.02
+    min: 0.015

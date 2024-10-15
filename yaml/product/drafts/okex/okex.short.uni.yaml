@@ -1,0 +1,16 @@
+# Original Binance Qty: 300/600
+symbol: UNIUSDT.SHORT
+exchange: OKEX.PERP
+
+# handle_inventory: no
+
+spread:
+  inner:
+    qty: [1, 2, 4, 8, 15]  # 300
+    value: 0.02
+    min: 0.005
+
+  outer:
+    qty: [1, 2, 4, 8, 15]  # + 300 = 600
+    value: 0.03
+    min: 0.025

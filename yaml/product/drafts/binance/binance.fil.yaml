@@ -1,0 +1,13 @@
+# Original Binance Qty: 30/60
+symbol: FILUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [2, 4, 10, 14, 30]  # 30
+    value: 0.01
+
+  outer:
+    qty: [3, 6, 15, 21, 45]  # 30
+    value: 0.02
+    min: 0.015

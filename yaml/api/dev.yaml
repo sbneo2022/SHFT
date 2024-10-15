@@ -1,0 +1,6 @@
+influx:
+  host: 10.0.0.1
+
+BINANCE.FUTURES:
+  key:
+  secret:

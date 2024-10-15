@@ -1,0 +1,13 @@
+# Original Binance Qty: 2000/4000
+symbol: ATOMUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [15, 30, 120, 255, 1580]  # 2000
+    value: 0.01
+
+  outer:
+    qty: [15, 30, 120, 255, 1580]  # + 2000 = 4000
+    value: 0.02
+    min: 0.015

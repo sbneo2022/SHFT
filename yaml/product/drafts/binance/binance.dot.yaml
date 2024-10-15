@@ -1,0 +1,13 @@
+# Original Binance Qty: 500/1000
+symbol: DOTUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [5, 10, 40, 95, 360]  # 500
+    value: 0.01
+
+  outer:
+    qty: [5, 10, 40, 95, 360]  # + 500 = 1000
+    value: 0.02
+    min: 0.015

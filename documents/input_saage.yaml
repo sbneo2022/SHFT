@@ -1,0 +1,57 @@
+BETTING INCENTIVES:
+  month_distribution: 18
+  month_offset: 12
+  total_supply_flag: 'NO'
+  weight: 0.025
+BETTING REBATES:
+  month_distribution: 24
+  month_offset: 12
+  total_supply_flag: 'NO'
+  weight: 0.025
+IDO:
+  month_distribution: 1
+  month_offset: 0
+  total_supply_flag: 'YES'
+  weight: 0.03
+INSURANCE FUND:
+  month_distribution: 1
+  month_offset: 0
+  total_supply_flag: 'YES'
+  weight: 0.1
+LP PROVIDERS:
+  exponential: true
+  exponential_arg:
+    month: [6, 18]
+    weight: [.6, .4]
+  month_offset: 1
+  total_supply_flag: 'NO'
+  weight: 0.2
+SEED:
+  month_distribution: 1
+  month_offset: 0
+  total_supply_flag: 'YES'
+  weight: 0.05
+STAKERS:
+  exponential: true
+  exponential_arg:
+    month: [9, 15, 12]
+    weight: [.1, .7, .2]
+  month_offset: 1
+  total_supply_flag: 'NO'
+  weight: 0.17
+STAKING AIRDROP:
+  month_distribution: 1
+  month_offset: 0
+  total_supply_flag: 'YES'
+  weight: 0.02
+TEAM:
+  month_distribution: 36
+  month_offset: 1
+  total_supply_flag: 'YES'
+  weight: 0.18
+TREASURY:
+  initial_supply: 50000000
+  month_distribution: 36
+  month_offset: 1
+  total_supply_flag: 'YES'
+  weight: 0.2

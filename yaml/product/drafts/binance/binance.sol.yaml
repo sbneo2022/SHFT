@@ -1,0 +1,15 @@
+# Original Binance Qty: 30000/6000
+symbol: SOLUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [10, 20, 40, 80, 350]  # 400
+    value: 0.01
+
+  outer:
+    qty: [30, 60, 120, 240, 1050]  # 800
+    value: 0.02
+    min: 0.015
+
+

@@ -1,0 +1,13 @@
+# Original Binance Qty: 20000/40000
+symbol: MATICUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [300, 600, 1200, 2400, 15500]  # 20_000
+    value: 0.01
+
+  outer:
+    qty: [300, 600, 1200, 2400, 15500]  # 20_000
+    value: 0.02
+    min: 0.015

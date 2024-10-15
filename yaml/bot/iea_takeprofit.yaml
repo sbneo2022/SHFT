@@ -1,0 +1,40 @@
+# Project name that will be "measurement' name in InfluxDb
+project: iea_takeprofit_bot_dev
+
+# Used Bot (path to python file from project root)
+bot: bot/iea/iea_takeprofit.py
+
+max_inventory: 0.5
+
+max_qty: 0.2
+
+max_pct: 0.1
+
+warming_up: 10 # time to block new orders in seconds
+
+take_profit: 2.0 # take profit in bps
+
+stoploss_coeff: 0.5
+
+side: -1
+
+##########################################################################################
+
+symbol: FILUSDT.SHORT
+exchange: OKEX.PERP
+
+#delta:
+#  symbol: FILUSDT
+#  exchange: BINANCE.FUTURES
+#
+#hedge:
+#  symbol: FILUSDT.SHORT
+#  exchange: OKEX.PERP
+#
+
+#subscription:
+#  - {symbol: FILUSDT, exchange: BINANCE.FUTURES}
+#  - {symbol: FILUSDT.LONG, exchange: OKEX.PERP}
+#  - {symbol: FILUSDT.SHORT, exchange: OKEX.PERP}
+#
+##########################################################################################

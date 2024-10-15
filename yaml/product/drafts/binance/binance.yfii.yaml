@@ -1,0 +1,13 @@
+# Original Binance Qty: 300/600
+symbol: YFIIUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [0.01, 0.03, 0.12, 0.3, 0.55]  # 1
+    value: 0.01
+
+  outer:
+    qty: [0.03, 0.09, 0.36, 0.9, 1.65]  # 2
+    value: 0.02
+    min: 0.015

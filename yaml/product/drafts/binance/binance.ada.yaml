@@ -1,0 +1,13 @@
+# Original Binance Qty: 100000/200000
+symbol: ADAUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [500, 1000, 8000, 17500, 73000]  # 100_000
+    value: 0.01
+
+  outer:
+    qty: [500, 1000, 8000, 17500, 73000]  # + 100_000 = 200_000
+    value: 0.02
+    min: 0.015

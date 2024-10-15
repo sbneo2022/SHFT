@@ -1,0 +1,13 @@
+# Original Binance Qty: 800/1600
+symbol: BANDUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty:  [10, 20, 80, 170, 520]  # 800
+    value: 0.01
+
+  outer:
+    qty:  [10, 20, 80, 170, 520]  # + 800 = 1600
+    value: 0.02
+    min: 0.015

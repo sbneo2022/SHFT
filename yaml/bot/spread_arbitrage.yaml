@@ -1,0 +1,32 @@
+#################################################
+# Spread Arbitrage Bot                           #
+#################################################
+
+# Project name that will be "measurement' name in InfluxDb
+project: spread_arbitrage_bot
+
+# Used Bot (path to python file from project root)
+bot: bot/iea/spread_arbitrage.py
+
+#################################################
+# TEST parameters: one product pair as example  #
+#################################################
+
+hedge:
+  symbol: RUNEUSD
+  exchange: FTX.PERP
+
+symbol: RUNEUSDT
+exchange: BINANCE.FUTURES
+
+#################################################
+# Arbitrage parameters                          #
+#################################################
+
+direction: -1  # trade direction. -1 --> we are going in opposite direction (we are SHORT for LONG inventory)
+
+high_threshold: 0.0010  # Threshold where we open FIRST arbitrage or FLIP position
+
+low_threshold: 0.0005  # Threshold where we FLIP position
+
+capital: 10  # Estimate bet capital in stablecoins

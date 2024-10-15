@@ -1,0 +1,8 @@
+series: spread_arbitrage_dev_pp_bot
+
+influx:
+  host: 54.238.28.196
+  port: 8086
+  username: bot
+  password: d3j-m2c-8py
+  database: logs

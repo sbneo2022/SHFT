@@ -1,0 +1,54 @@
+# Project name that will be "measurement' name in InfluxDb
+project: pancake_prod_1
+
+# Used Bot (path to python file from project root)
+bot: bot/dex_arbitrage/arbitrage_bot.py
+
+series: pancake_dev
+
+dex_exchange: pancake
+
+quotes:
+  BNB: [.1]
+
+pancake:
+  node: https://bsc-dataseed.binance.org/
+  address: "0xf5DBF73A2D6c36d0cB7439149B049Ed5b2333505"
+  private_key:
+
+bakery:
+  node: https://bsc-dataseed.binance.org/
+  address: "0xf5DBF73A2D6c36d0cB7439149B049Ed5b2333505"
+  private_key:
+
+binance:
+  key:
+  secret:
+  address:
+  memo:
+
+interval: 1
+live: true
+min_roc: 20
+
+subscription:
+  {
+    BINANCE.SPOT:
+      [
+        DOTBNB,
+        ADABNB,
+        ALPACABNB,
+        UNIBNB,
+        PERLBNB,
+        MBOXBNB,
+        SXPBNB,
+        BAKEBNB,
+        XVSBNB,
+        XRPBNB,
+        ALPHABNB,
+        ATOMBNB,
+        ZILBNB,
+        LTCBNB,
+        EGLDBNB,
+      ],
+  }

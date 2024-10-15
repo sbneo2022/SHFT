@@ -1,0 +1,11 @@
+influx:
+  host: 10.0.2.213
+  database: marketdata
+
+OKEX.PERP:
+  rest_url: https://aws.okex.com
+  wss_url: wss://real.okex.com:8443/ws/v3
+
+BINANCE.FUTURES:
+  rest_url: https://fapi.binance.com
+  wss_url: wss://fstream.binance.com

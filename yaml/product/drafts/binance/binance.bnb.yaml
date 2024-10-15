@@ -1,0 +1,13 @@
+# Original Binance Qty: 500/1000
+symbol: BNBUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [10, 30, 60, 120, 280]
+    value: 0.0075
+
+  outer:
+    qty: [10, 30, 60, 120, 280]
+    value: 0.015
+    min: 0.01

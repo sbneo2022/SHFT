@@ -1,0 +1,36 @@
+# Project name that will be "measurement' name in InfluxDb
+project: delta_bot
+
+# Used Bot (path to python file from project root)
+bot: bot/delta/delta.py
+
+##########################################################################################
+
+symbol: 1INCHUSDT.LONG
+exchange: OKEX.PERP
+
+secondary:
+  symbol: 1INCHUSDT
+  exchange: BINANCE.FUTURES
+
+subscription:
+  - {symbol: 1INCHUSDT, exchange: BINANCE.FUTURES}
+  - {symbol: 1INCHUSDT.LONG, exchange: OKEX.PERP}
+
+##########################################################################################
+
+threshold: 1000 # delta bps when we OPEN position
+
+close: 5 # delta bps when we CLOSE position
+
+max_qty: 50  # max allocation we able to collect
+
+qty: 5  # Single step (MARKET order) qty
+
+interval: 10  # seconds between MARKET orders
+
+direction: -1
+
+side: 1
+
+formula: ask

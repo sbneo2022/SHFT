@@ -1,0 +1,5 @@
+python_telegram_bot==13.3
+hazelcast_python_client==4.0
+APScheduler==3.6.3
+deepmerge==0.1.1
+PyYAML==5.4.1

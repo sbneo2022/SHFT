@@ -1,0 +1,13 @@
+# Original Binance Qty: 2000/4000
+symbol: LINKUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [30, 60, 120, 240, 1550]  # 2000
+    value: 0.0075
+
+  outer:
+    qty: [30, 60, 120, 240, 1550]  # 2000
+    value: 0.015
+    min: 0.01

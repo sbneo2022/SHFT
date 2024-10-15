@@ -1,0 +1,13 @@
+# Original Binance Qty: 800_000/1_600_000
+symbol: DOGEUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [25000, 50000, 100000, 200000, 425000]
+    value: 0.01
+
+  outer:
+    qty: [25000, 50000, 100000, 200000, 425000]
+    value: 0.02
+    min: 0.015

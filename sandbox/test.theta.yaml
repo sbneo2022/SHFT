@@ -1,0 +1,22 @@
+bot: bot/clp/clp_atr.py
+
+symbol: THETAUSDT
+exchange: BINANCE.FUTURES
+
+hold: 2.1
+
+spread:
+
+  inner:
+#    value: 0.004
+    value: 0.01
+    gap: 0.05
+    hysteresis: 0.10
+    force: 0.5
+    qty: 1.2
+
+  outer:
+    value: 0.02
+    gap: 0.05
+    hysteresis: 0.25
+    qty: 1.2

@@ -1,0 +1,78 @@
+######################
+# Hedging parameters #
+######################
+
+# Project name that will be "measurement' name in InfluxDb
+project: hedging_bot
+
+# Used Bot (path to python file from project root)
+bot: bot/clp/hedge_follow.py
+
+side: +1  # +1 --> we will handle LONG inventory only; 0 --> use both sides. -1 --> use SHORT inventory only
+
+source: clp_bot_prod  # project name we are using
+
+direction: -1  # trade direction. -1 --> we are going in opposite direction (we are SHORT for LONG inventory)
+
+pause: 600 # pause in second of
+
+hedge:  # Hedging levels
+
+  - {threshold: 0.2, max_pct: 0.15}
+
+
+######################
+# General parameters #
+######################
+
+# How many ATR away should be Stoploss Price
+stoploss_coeff: 6
+
+# Fixed Trailing profit after Break Event
+trailing_profit: 0.0025
+
+# Fixed Trailing profit after Stoploss Break Event
+stoploss_trailing_profit: 0.0025
+
+# Min holding time
+hold: 2.1
+
+
+conditions:
+  - {
+      fn: conditions/max_spread.py,
+      action: [{action: pause, value: 6}],
+      max_abs_spread: 0.004
+    }
+  - {
+      fn: conditions/max_latency.py,
+      action: [{action: pause, value: 6}],
+      max_latency: 0.5
+    }
+  - {
+      fn: conditions/max_allocation.py,
+      action: [{action: liquidation, value: 0.3}, {action: pause, value: 600}],
+      max_allocation_coeff: 1
+    }
+
+# Condition Parameters (seconds for time)
+high_ratio_spread_pause: 3  # Pause when Spread/AvgSpread - 1 > max_ratio_spread
+high_api_pause: 60  # Pause when we are close to API limits
+high_losses_pause: 0.1  # Pause when we hit all Stoploss Levels
+max_ratio_spread: 3
+max_spread_count: 1000
+
+# Spread parameters
+spread:
+  inner:
+    qty:  # Empty --> should be override
+    value:   # Empty --> should be override with Inner Spread
+    gap: 0.001
+    hysteresis: 0.1  # We replace levels if distance decrease more than 10%
+    force: 0.8   # We can replace levels _before_ holding time if ask/bid too close (more than 80%)
+
+  outer:
+    qty:  # Empty --> should be override
+    value:   # Empty --> should be override with Outer Spread
+    min:  # Empty --> should be override with Min Outer Spread value
+    hysteresis: 0.25

@@ -1,0 +1,63 @@
+[
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "tuple",
+        "name": "",
+        "internalType": "struct AmmReader.AmmStates",
+        "components": [
+          {
+            "type": "uint256",
+            "name": "quoteAssetReserve",
+            "internalType": "uint256"
+          },
+          {
+            "type": "uint256",
+            "name": "baseAssetReserve",
+            "internalType": "uint256"
+          },
+          {
+            "type": "uint256",
+            "name": "tradeLimitRatio",
+            "internalType": "uint256"
+          },
+          {
+            "type": "uint256",
+            "name": "fundingPeriod",
+            "internalType": "uint256"
+          },
+          {
+            "type": "string",
+            "name": "quoteAssetSymbol",
+            "internalType": "string"
+          },
+          {
+            "type": "string",
+            "name": "baseAssetSymbol",
+            "internalType": "string"
+          },
+          {
+            "type": "bytes32",
+            "name": "priceFeedKey",
+            "internalType": "bytes32"
+          },
+          {
+            "type": "address",
+            "name": "priceFeed",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "name": "getAmmStates",
+    "inputs": [
+      {
+        "type": "address",
+        "name": "_amm",
+        "internalType": "address"
+      }
+    ]
+  }
+]

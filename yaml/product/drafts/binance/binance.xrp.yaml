@@ -1,0 +1,13 @@
+# Original Binance Qty: 50_000/100_000
+symbol: XRPUSDT
+exchange: BINANCE.FUTURES
+
+spread:
+  inner:
+    qty: [1000, 2000, 5000, 10000, 32000]
+    value: 0.0075
+
+  outer:
+    qty: [1000, 2000, 5000, 10000, 32000]
+    value: 0.015
+    min: 0.01

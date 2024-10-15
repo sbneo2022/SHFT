@@ -1,0 +1,9 @@
+token: "1202329327:AAGi03QJLdr6PffAV9DKp6d3ImLt9p0WWKk"
+
+hazelcast: 127.0.0.1:5701  # Also could be a List for Cluster setup
+
+topic: alive
+
+timeout: 5  # :seconds  Timeout when we sending ALERT
+
+dev_id: 0

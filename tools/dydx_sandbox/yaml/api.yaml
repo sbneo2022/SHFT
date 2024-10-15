@@ -1,0 +1,8 @@
+series: dydx_liquidation
+
+influx:
+  host: 10.0.0.1
+  port: 8086
+  username: admin
+  password: 123456
+  database: logs

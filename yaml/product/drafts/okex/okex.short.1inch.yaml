@@ -1,0 +1,16 @@
+# Original Binance Qty: 400/800
+symbol: 1INCHUSDT.SHORT
+exchange: OKEX.PERP
+
+# handle_inventory: no
+
+spread:
+  inner:
+    qty: [10, 20, 40, 80, 250]  # 15
+    value: 0.02
+    min: 0.005
+
+  outer:
+    qty: [10, 20, 40, 80, 250]  # + 15 = 30
+    value: 0.03
+    min: 0.025

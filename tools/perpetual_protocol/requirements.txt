@@ -1,0 +1,6 @@
+requests==2.26.0
+web3==5.21.0
+loguru==0.5.3
+deepmerge==0.3.0
+influxdb==5.2.3
+PyYAML==5.4.1

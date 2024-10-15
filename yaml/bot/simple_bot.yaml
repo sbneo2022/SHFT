@@ -1,0 +1,7 @@
+# Project name that will be "measurement' name in InfluxDb
+project: simple_bot
+
+# Used Bot (path to python file from project root)
+bot: bot/sandbox_bot/simple_bot.py
+
+subscription: { BINANCE.SPOT: [ETHUSDT] }
